@@ -1,0 +1,134 @@
+body { 
+    font: 14px helvetica neue, helvetica, arial, sans-serif;
+  }
+  
+  #cy {
+    width: 70%;
+    position: absolute;
+    padding: 0.5em 0.5em;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 3px solid red;
+}
+  #menu {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 0.5em 1.5em;
+    top: 10px;
+    left : 10px;
+    bottom: 10px;
+    width: 27%;
+    background: #fff;
+    border: 3px solid red;
+    overflow: auto;
+  }
+  *:focus {
+    outline: none;
+  }
+  .txtSearch {
+    -webkit-appearance: none;
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 35px;
+    width: 90px;
+    margin: 0;
+}
+  .txtSearch:focus {
+    border: 3px solid red;
+  }
+  .btnSearch {
+    -webkit-appearance: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 90px;
+    color: black;
+    border: none;
+    margin-left: 30px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+  .btnSearch:hover {
+    background: none;
+    border: 3px solid red;
+  }
+  .btnSearch:active {
+    border-color: red;
+    background: none;
+  }
+  .input-container {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  /* Dropdown */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+}
+
+.dd-button {
+  display: inline-block;
+  border: 3px solid #808080;
+  border-radius: 5px;
+  padding: 7px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-button:hover {
+  background-color: #ffffff;
+  border: 3px solid red;
+}
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  border: 3px solid red;
+  border-radius: 10px;
+  padding-right: 20px;
+  margin: 2px;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  list-style-type: none;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+} 
+
+.dd-input:checked + .dd-menu {
+  display: block;
+} 
+
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-menu li:hover {
+  background-color: #00B8FF;;
+  color: white;
+}
+
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+.dd-menu {
+  padding: 0;
+  border: 3px solid red;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet" />
+        <script src="cytoscape.min.js"></script>
+        <title>Graph Visualization</title>
+    </head>
+    <body>
+        <div id="menu">
+                <h2><center>Graph Algorithms Visualization</center></h2>
+            <div class="input-container">
+                <input type="text" class="txtSearch" placeholder="Start node" id="startnode" oninput="run()"/>
+                <label class="dropdown">
+                        <div class="dd-button">
+                            Select Algorithm
+                        </div> 
+                        <input type="checkbox" class="dd-input" id="test">
+                        
+                        <ul class="dd-menu" id="ul">
+                            <li id="DFS">Depth First Search</li>
+                            <li id="BFS">Breadth First Search</li>
+                            <li id="MST">Minimum Spanning Tree</li>
+                        </ul>     
+                </label>
+            </div>
+            <div style="padding-top: 20px;">
+                    <input type="button" class="btnSearch" Value="Clear" onclick="reset()" />
+            </div>
+            <br>
+            <h2><center>Custom Graph</center></h2>
+            <div>
+                <div style="padding: 7px 20px;">
+                    <input type="text" class="txtSearch" placeholder="#nodes" id="newNodes" />
+                    <input type="button" class="btnSearch" Value="Add Nodes" onclick="addNode()" />
+                </div>
+                <div style="padding: 7px 20px;">
+                    <input type="text" class="txtSearch" placeholder="From Node" id="From-Node"/>
+                    <input type="text" class="txtSearch" placeholder="To Node" id="To-Node"/>
+                    <input type="text" class="txtSearch" placeholder="Weight" id="Weight" />
+                </div>
+                <div style="margin: 7px -10px;">
+                    <input type="button" class="btnSearch" Value="Add Edge" onclick="addEdge()" />
+                </div>
+            </div>
+        </div>
+        <div id="cy"></div>
+        <script src="index.js"></script>
+        <script src="dfs.js"></script>
+        <script src="bfs.js"></script>
+        <script src="mst.js"></script>
+    </body>
+</html>
